@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="alphabet_size">12.0dip</dimen>
+    <dimen name="umeng_socialize_pad_window_height">350.0dip</dimen>
+    <dimen name="umeng_socialize_pad_window_width">580.0dip</dimen>
+    <dimen name="standard_padding">8.0dip</dimen>
+    <dimen name="half_padding">4.0dip</dimen>
+    <dimen name="indicator_right_padding">10.0dip</dimen>
+    <dimen name="indicator_corner_radius">12.0dip</dimen>
+    <dimen name="indicator_internal_padding">4.0dip</dimen>
+    <dimen name="header_footer_left_right_padding">24.0dip</dimen>
+    <dimen name="header_footer_top_bottom_padding">12.0dip</dimen>
+    <dimen name="busline_graph_row_height">100.0dip</dimen>
+    <dimen name="busline_graph_link_size">5.0dip</dimen>
+    <dimen name="busline_graph_node_text_size">12.0sp</dimen>
+    <dimen name="busline_map_line_size">3.0dip</dimen>
+    <dimen name="init_font_size">18.0dip</dimen>
+    <dimen name="activity_card_charge_info">15sp</dimen>
+    <dimen name="dialog_btn_padding">10dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="activity_card_charge_tv">16sp</dimen>
+    <dimen name="activity_card_charge_tv_margin">3dp</dimen>
+
+
+    <!--alertview-->
+    <!--标题文字大小-->
+    <dimen name="textSize_alert_title">22sp</dimen>
+    <dimen name="textSize_actionsheet_title">14sp</dimen>
+    <!--标题文字高度-->
+    <dimen name="height_alert_title">60dp</dimen>
+    <dimen name="height_actionsheet_title">40dp</dimen>
+    <!--消息文字大小-->
+    <dimen name="textSize_alert_msg">15sp</dimen>
+    <dimen name="textSize_actionsheet_msg">14sp</dimen>
+    <!--消息距离底部间距-->
+    <dimen name="marginBottom_alert_msg">25dp</dimen>
+    <dimen name="marginBottom_actionsheet_msg">14dp</dimen>
+    <!--窗口模式左右两边到屏幕的间距-->
+    <dimen name="margin_alert_left_right">40dp</dimen>
+    <dimen name="margin_actionsheet_left_right">10dp</dimen>
+    <!--线条粗细-->
+    <dimen name="size_divier">1dp</dimen>
+    <!--按钮的高度-->
+    <dimen name="height_alert_button">48dp</dimen>
+    <!--按钮文字大小-->
+    <dimen name="textSize_alert_button">18sp</dimen>
+    <!--圆角-->
+    <dimen name="radius_alertview">15px</dimen>
+    <!--alertview_data-->
+    <!-- 顶部按钮栏高度 -->
+    <dimen name="pickerview_topbar_height">44dp</dimen>
+    <!-- 顶部按钮paddingLeft -->
+    <dimen name="pickerview_topbar_paddingleft">10dp</dimen>
+    <!-- 顶部按钮paddingRight -->
+    <dimen name="pickerview_topbar_paddingright">30dp</dimen>
+    <!-- 顶部按钮文字大小 -->
+    <dimen name="pickerview_topbar_btn_textsize">16sp</dimen>
+    <dimen name="pickerview_topbar_title_textsize">18sp</dimen>
+</resources>

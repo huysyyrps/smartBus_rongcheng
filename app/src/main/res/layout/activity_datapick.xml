@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+     <RelativeLayout
+        android:id="@+id/homepage_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+         android:background="@drawable/home_titlebar"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+        <ImageView
+            android:id="@+id/huochexq_back"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="余票详情"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/jialllist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:cacheColorHint="#00000000" />
+
+</LinearLayout>

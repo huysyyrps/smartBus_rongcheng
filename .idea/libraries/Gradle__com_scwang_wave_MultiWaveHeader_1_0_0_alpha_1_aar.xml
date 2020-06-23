@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.scwang.wave:MultiWaveHeader:1.0.0-alpha-1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8bb0320db26fbdbb9f1772b389f6186e/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8bb0320db26fbdbb9f1772b389f6186e/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.scwang.wave/MultiWaveHeader/1.0.0-alpha-1/6ae264516d29025ca1d9818f6b883be5b26d72cc/MultiWaveHeader-1.0.0-alpha-1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

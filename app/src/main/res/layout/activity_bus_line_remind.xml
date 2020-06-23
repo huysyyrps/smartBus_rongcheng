@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout android:id="@+id/bus_line_detail_top"
+        android:background="@drawable/titlebar_bg" 
+        android:padding="0.0dip" 
+        android:fadingEdge="none" 
+        android:layout_width="fill_parent" 
+        android:layout_height="48.0dip">
+        <Button android:textSize="15.0sp" 
+            android:textStyle="bold" android:textColor="@color/white"
+            android:id="@+id/bus_line_back_btn"
+            android:background="@drawable/titlebar_back_button" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:text="@string/back" 
+
+            android:layout_centerVertical="true" 
+            android:onClick="back" />
+
+        <TextView android:textSize="20.0sp" 
+            android:textColor="@color/white"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_centerInParent="true"  />
+        
+    </RelativeLayout>
+   
+    <ScrollView 
+        android:id="@+id/remind_scrollview"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="fill_parent">
+	    <main.smart.bus.view.BusLineRemindView
+	        android:id="@+id/bus_line_remind"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" />
+	
+	</ScrollView>
+    
+
+</LinearLayout>

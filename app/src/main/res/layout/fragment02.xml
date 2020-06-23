@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/erweima"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/qrcodeback"
+        android:visibility="gone"
+        android:orientation="vertical" >
+        <RelativeLayout
+            android:id="@+id/homepage_title"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="#00000000"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+            <ImageView
+                android:id="@+id/cardhome_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="付款码"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/view"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/homepage_title" >
+
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+                <LinearLayout
+                    android:id="@+id/onLineBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/reacherfirst"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="二维码对准收费机扫描口刷码乘车"
+                        android:textColor="#8B6508"
+                        android:layout_marginTop="8dp"
+                        android:textSize="15dp" />
+                    <ImageView
+                        android:id="@+id/iv"
+                        android:layout_width="330dp"
+                        android:layout_height="330dp"
+                        android:layout_gravity="center_horizontal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="点击刷新二维码"
+                        android:textColor="#8B6508"
+                        android:textSize="15dp" />
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:src="@drawable/login_fen_big" />
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/readBtn"
+                        android:layout_alignBottom="@+id/readBtn"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/qrcodechong"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/qrcodemoney" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="充值" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/qrcodeyu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/qrcodeyue" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="我的钱包" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/qrcodeji"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/qrcodewall" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="消费记录" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/kaitongcard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:orientation="vertical" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:background="@drawable/cardcardnewheard"
+            android:paddingLeft="16dp"
+            android:paddingTop="20dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="20dp">
+
+
+
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/readBtn"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="-108dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/cardnono"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingTop="15dp">
+
+                <ImageView
+                    android:id="@+id/my_image_view"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/ic_logo2" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="云公交卡"
+                        android:textColor="#ffffff"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="50dp"
+                        android:orientation="horizontal">
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="公交"
+                            android:textColor="#ffffff"
+                            android:background="@drawable/yungongjiao"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/sseexx"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="80dp"            android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="卡号："
+
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/tv_cardnono"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="1***********"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/chargecard"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/wallet_button"
+            android:text="开通云公交卡"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
+</LinearLayout>

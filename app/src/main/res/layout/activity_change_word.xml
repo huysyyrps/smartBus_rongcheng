@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="main.sheet.ChangeWordActivity">
+
+    <main.utils.views.Header
+        android:id="@+id/header"
+        style="@style/Header"
+        app:header_title="@string/change_password">
+    </main.utils.views.Header>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextView"
+             android:layout_weight="1"
+            android:textColor="@color/black"
+            android:text="@string/old_password"/>
+
+        <EditText
+            android:id="@+id/etOldPassWord"
+            style="@style/EditText"
+            android:layout_weight="2.5"
+            android:hint="@string/write_password1"
+            android:textColor="@color/bg_do_botttom" />
+    </LinearLayout>
+    <View style="@style/HourLine"
+        android:layout_height="10dp"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextView"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:text="@string/write_new"/>
+
+        <EditText
+            android:id="@+id/etPassWord"
+            style="@style/EditText"
+            android:layout_weight="2.5"
+            android:hint="@string/write_password"
+            android:textColor="@color/bg_do_botttom" />
+    </LinearLayout>
+    <View style="@style/HourLine"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextView"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:text="@string/write_newsure"/>
+
+        <EditText
+            android:id="@+id/etPassWordAgain"
+            style="@style/EditText"
+            android:layout_weight="2.5"
+            android:hint="@string/write_password_agin"
+            android:textColor="@color/bg_do_botttom" />
+    </LinearLayout>
+    <View style="@style/HourLine"></View>
+
+    <Button
+        android:id="@+id/btn"
+        style="@style/Button"
+        android:text="@string/change_password"/>
+
+</LinearLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/tiop"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_bg_selectednew"
+        android:padding="10dp" >
+        <RelativeLayout
+            android:id="@+id/order_black3"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp" >
+            <ImageView
+                android:id="@+id/newdema_location"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/fujin_03" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:text="消费记录"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_marginLeft="5dp" >
+            <TextView
+                android:id="@+id/datetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:text="选择日期"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <main.flyrefresh.FlyRefreshLayout
+        android:id="@+id/fly_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ccc"
+        android:layout_below="@+id/tiop"
+        tools:context="main.Charge.ConsumptionActivity">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="24dp"
+            android:background="#FFFFFF"/>
+    </main.flyrefresh.FlyRefreshLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/sseexx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="28dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="20dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:background="@drawable/chargemoney" />-->
+
+                <TextView
+                    android:id="@+id/tv_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="账户余额"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥"
+                    android:gravity="center"
+                    android:textColor="#FFB90F"
+                    android:textSize="29sp" />
+                <TextView
+                    android:id="@+id/tv_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:gravity="center"
+                    android:textColor="#FFB90F"
+                    android:textSize="29sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

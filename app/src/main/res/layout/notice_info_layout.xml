@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/bus_station_detail_top" android:background="@drawable/titlebar_bg" android:padding="0.0dip" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <Button android:textSize="15.0sp" 
+            android:textStyle="bold" 
+            android:textColor="@color/white"
+            android:id="@+id/bus_station_back_btn"
+            android:background="@drawable/titlebar_back_button" 
+            android:layout_width="60.0dip" 
+            android:layout_height="36.0dip" 
+            android:layout_marginLeft="4.0dip" 
+            android:text="@string/back" 
+            android:layout_alignParentLeft="true" 
+            android:layout_centerVertical="true" 
+            android:onClick="back" />
+        
+        <TextView android:textSize="20.0sp" 
+            android:textColor="@color/white"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:text="公告详情" 
+            android:layout_centerInParent="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/bus_station_back_btn"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:orientation="horizontal" >
+
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/notice_date_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+        <EditText
+            android:id="@+id/notice_title_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10" 
+            android:editable="false"
+            android:focusable="false"
+            android:inputType="textMultiLine"
+            >
+            <requestFocus />
+        </EditText>
+        
+        <EditText
+            android:id="@+id/notice_content_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.83"
+            android:ems="10"
+            android:editable="false"
+            android:focusable="false"
+            android:inputType="textMultiLine" 
+            >
+        <requestFocus />
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+    </LinearLayout>
+    
+</LinearLayout>
+

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="main.other.SwrlListActivity">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="@color/color_bg_selected"
+        android:layout_height="45dp">
+        <TextView
+            android:id="@+id/tv_tittle"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            android:text="标题"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/iv_left"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_back"
+            android:layout_alignParentLeft="true"
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+        <Spinner
+            android:textColor="@android:color/white"
+            android:id="@+id/spinner"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_width="150dp"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <include layout="@layout/no_content"/>
+
+</LinearLayout>

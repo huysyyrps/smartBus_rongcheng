@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="46dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:paddingLeft="8dp"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:textSize="17dp"/>
+
+    <View style="@style/HourLine"></View>
+
+</LinearLayout>

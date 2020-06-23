@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical" >
+        <RelativeLayout
+        	android:background="@color/color_bg_selected"
+        	android:padding="0.0dip"
+        	android:fadingEdge="none"
+        	android:layout_width="fill_parent"
+        	android:layout_height="48.0dip">
+			<ImageView
+				android:id="@+id/iv_left"
+				android:scaleType="centerInside"
+				android:src="@drawable/icon_back"
+				android:layout_alignParentLeft="true"
+				android:layout_width="50dp"
+				android:onClick="back"
+				android:layout_height="match_parent" />
+
+        	<TextView
+            	android:textSize="20.0sp"
+            	android:textColor="@color/white"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="查询结果"
+            	android:layout_centerInParent="true" />
+    	</RelativeLayout>
+		<LinearLayout
+			android:visibility="gone"
+		    android:layout_width="fill_parent"
+        	android:layout_height="48.0dip"
+        	android:orientation="horizontal">
+		    <ImageView
+		        android:src="@drawable/bustransfer_start"
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		    />
+		    <TextView
+		       	android:id="@+id/startstation"
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:gravity="center"
+		        android:textStyle="bold"
+		        android:textSize="18sp"
+		        android:textColor="#000000"
+		       />
+		    <ImageView
+		        android:src="@drawable/bustransfer_arrow"
+		        android:scaleType="fitCenter"
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        />
+		    <ImageView
+		        android:src="@drawable/bustransfer_finish"
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        />
+		    <TextView
+		       	android:id="@+id/endstation"
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:gravity="center"
+		        android:textStyle="bold"
+		        android:textSize="18sp"
+		        android:textColor="#000000"
+		       />
+		</LinearLayout>
+		<LinearLayout
+			android:visibility="gone"
+		    android:layout_width="fill_parent"
+        	android:layout_height="22.0dip"
+        	android:orientation="horizontal">
+
+		    <TextView
+		       	android:id="@+id/show_ts"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:gravity="center"
+		        android:textStyle="bold"
+		        android:textSize="18sp"
+		        android:textColor="#FF0033"
+		    />
+		</LinearLayout>
+		
+	<ListView
+	    android:id="@+id/queryreshow"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	  	android:layout_gravity="center_horizontal">
+	</ListView>
+</LinearLayout>

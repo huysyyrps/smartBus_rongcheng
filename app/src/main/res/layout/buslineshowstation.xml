@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:orientation="vertical"
+        android:background="@drawable/shikebiao33"
+        android:padding="4.0dip" >
+
+        <!--<ImageView-->
+        <!--android:id="@id/bus_line_icon"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:paddingBottom="5.0dip"-->
+        <!--android:scaleType="fitCenter"-->
+        <!--android:src="@drawable/stationlist_busicon" />-->
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/brown_text"
+            android:text="运行区间"
+            android:textSize="20.0sp" />
+        <TextView
+            android:id="@id/bus_operation_range"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/brown_text"
+            android:textSize="18.0sp" />
+        <TextView
+            android:id="@+id/bus_operation_pice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+
+            android:visibility="gone"
+            android:textColor="@color/brown_text"
+            android:textSize="20.0sp" />
+        <TextView
+            android:id="@id/bus_operation_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/brown_text"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20.0sp" />
+
+        <TextView
+            android:id="@+id/bus_operation_nexttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/brown_text"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20.0sp" />
+
+
+
+    </LinearLayout>
+
+    <!--	<ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/shikebiao" />-->
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="-40dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/view_circlecorner_white"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_weight="1.0">
+
+        <main.smart.bus.view.RunBusView
+            android:id="@+id/bus_view_zxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" />
+
+    </ScrollView>
+
+</LinearLayout>

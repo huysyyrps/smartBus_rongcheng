@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/bus_line_detail_top"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:background="@color/color_bg_selected"
+        android:fadingEdge="none"
+        android:padding="0.0dip">
+
+        <ImageView
+            android:id="@+id/bus_line_back_btn"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/icon_back"
+            android:padding="15dp"
+            android:layout_width="50dp"
+            android:onClick="back"
+            android:layout_height="match_parent" />
+        <!-- open baidu map -->
+        <ImageButton
+            android:id="@+id/bus_line_map_btn"
+            android:layout_width="48.0dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/color_bg_selected"
+            android:onClick="toBusLineMap"
+            android:padding="8.0dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/titlebar_map_button" />
+        <!--
+        <ImageButton android:id="@+id/bus_favorite_btn" android:background="@drawable/titlebar_borderless_button" android:padding="8.0dip" android:layout_width="48.0dip" android:layout_height="fill_parent" android:layout_marginBottom="2.0dip" android:src="@drawable/titlebar_favor_button" android:scaleType="fitCenter" android:layout_toLeftOf="@+id/bus_line_map_btn" android:onClick="toBusFavoriteSetting" />
+        -->
+        <TextView
+            android:id="@+id/bus_line_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:onClick="switchBusReverseLine"
+            android:textColor="@color/white"
+            android:textSize="17.0sp" />
+    </RelativeLayout>
+
+    <main.utils.views.Header
+        android:visibility="gone"
+        android:id="@+id/header"
+        style="@style/Header">
+    </main.utils.views.Header>
+    <!--  这个组件，注意这个组件是用来显示左右滑动的界面的，如果不加载xml布局文件，他是不会显示内容的。   -->
+    <main.smart.bus.view.ScrollViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0" />
+
+    <LinearLayout
+        android:id="@+id/bus_line_detail_tabs"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/busline_list_tabbar"
+        android:paddingBottom="0.0dip"
+        android:paddingTop="4.0dip">
+
+        <LinearLayout
+            android:id="@+id/bus_line_detail_graph_btn"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/tab_busgraph" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bus_line_graph"
+                android:textColor="@color/tab_indicator_text"
+                android:textSize="15dp"/>
+        </LinearLayout>
+        <!--  
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/bus_line_detail_station_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/tab_stationlist" android:scaleType="fitCenter" />
+            <TextView android:textColor="@color/tab_indicator_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bus_station_list" />
+        </LinearLayout>
+        -->
+
+        <LinearLayout
+            android:id="@+id/bus_line_detail_bus_btn"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/tab_buslist" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bus_list"
+                android:textSize="15dp"
+                android:textColor="@color/tab_indicator_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bus_line_showstation_btn"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30.0dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/tab_buslinelist" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bus_station_list"
+                android:textSize="15dp"
+                android:textColor="@color/tab_indicator_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/bus_favorite_btn"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="36.0dip"
+                android:layout_height="36.0dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/tab_favorite" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bus_favorite"
+                android:textColor="@color/tab_indicator_text" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

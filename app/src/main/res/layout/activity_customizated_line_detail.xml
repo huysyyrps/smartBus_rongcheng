@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/recyclerViewBackgroundColor"
+   >
+    <main.utils.views.Header
+        android:id="@+id/header"
+        style="@style/Header"
+        app:header_title="H35-2"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <TextView
+                android:id="@+id/id_satartstation_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=" "
+                android:gravity="center"
+                android:textColor="@color/black"
+
+                android:textSize="16dip"/>
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/icon_jiantou"/>
+            <TextView
+                android:id="@+id/id_endstation_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=" "
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="16dip"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:id="@+id/id_remarked_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textColor="@color/textGray"
+                android:textSize="13dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+           android:layout_marginBottom="10dp">
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/icon_history_address"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="班次"
+                android:textSize="13dp"
+                android:layout_marginLeft="0dp"
+                />
+            <HorizontalScrollView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:scrollbars="none"
+                >
+                <RadioGroup
+                    android:id="@+id/id_shifts_radiogroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                </RadioGroup>
+
+            </HorizontalScrollView>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/id_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/white"></androidx.recyclerview.widget.RecyclerView>
+
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white">
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/id_baidu_map_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/red"
+
+            ></com.baidu.mapapi.map.MapView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drowppull_bg"
+            android:padding="0dp"
+            android:gravity="center"
+
+
+            >
+            <ImageView
+                android:id="@+id/id_drop_down_imgV"
+               android:layout_marginTop="0dp"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:paddingTop="8dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:background="@drawable/view_bottom_corner"
+                android:scaleType="fitCenter"
+                android:src="@drawable/drowp_up"
+
+                />
+        </LinearLayout>
+        <Button
+            android:id="@+id/id_button_buy"
+           style="@style/Button3"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="20dp"
+            android:text="￥3购票"/>
+
+    </FrameLayout>
+
+
+
+</LinearLayout>

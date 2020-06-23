@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:fadingEdge="none">
+
+        <EditText
+            android:id="@+id/baidu_route_fragment_qd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:completionThreshold="1"
+            android:hint="起点位置"
+            android:textSize="17sp"
+            android:background="@null"
+            android:paddingLeft="15dp"/>
+
+        <EditText
+            android:id="@+id/et1"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:completionThreshold="1"
+            android:hint="起点位置"
+            android:textSize="17sp"
+            android:background="@null"
+            android:paddingLeft="15dp"/>
+
+        <ImageButton
+            android:id="@+id/baidu_start_btn"
+            android:layout_width="25.0dip"
+            android:layout_height="25.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/busstaion_nearby_station" />
+    </RelativeLayout>
+
+    <View style="@style/HourLine"></View>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:fadingEdge="none">
+
+        <EditText
+            android:id="@+id/baidu_route_fragment_zd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:completionThreshold="1"
+            android:hint="终点位置"
+            android:textSize="17sp"
+            android:background="@null"
+            android:paddingLeft="15dp"/>
+
+        <EditText
+            android:id="@+id/et2"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:completionThreshold="1"
+            android:hint="起点位置"
+            android:textSize="17sp"
+            android:background="@null"
+            android:paddingLeft="15dp"/>
+
+        <ImageButton
+            android:id="@+id/baidu_end_btn"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:visibility="gone"
+            android:background="@drawable/busstaion_nearby_station" />
+    </RelativeLayout>
+
+    <View style="@style/HourLine"></View>
+
+    <Button
+        android:id="@+id/baidu_route_fragment_search"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/color_bg_selected"
+        android:text="查询"
+        android:layout_margin="45dp"
+        android:textColor="@color/white"
+        android:textSize="15.0sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:text="@string/feedback"
+        android:textColor="#222222"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider"/>
+
+    <EditText
+        android:gravity="top"
+        android:padding="10dp"
+        android:id="@+id/etContent"
+        android:textSize="16sp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColor="@color/xiaohei"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@null"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:id="@+id/no"
+            android:text="@string/title_tips_cancel"
+            android:textColor="@color/color_forget_button"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/divider"/>
+        <TextView
+            android:id="@+id/yes"
+            android:text="@string/title_tips_confim"
+            android:textColor="@color/color_forget_button"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

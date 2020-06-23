@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/view_circlecorner_white"
+        android:paddingLeft="15dp">
+        <LinearLayout
+            android:id="@+id/id_setout_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:onClick="searchSetOutAddressClickListener"
+            >
+            <View
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:background="@drawable/view_circle_green">
+            </View>
+            <TextView
+                android:id="@+id/id_setout_textview"
+                android:layout_marginLeft="10dp"
+                style="@style/EditText"
+
+                android:textSize="16dp"
+                android:textColor="@color/black"
+
+                android:text=""
+                android:hint="请选择始发地"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lineGray"></LinearLayout>
+        <LinearLayout
+            android:id="@+id/id_end_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:onClick="searchEndAddressClickListener"
+            >
+            <View
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:background="@drawable/view_circle_red">
+            </View>
+            <TextView
+                android:id="@+id/id_end_textview"
+                android:layout_marginLeft="10dp"
+                style="@style/EditText"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:hint="请选择目的地"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+

@@ -1,0 +1,33 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+
+            maven { url "http://jcenter.bintray.com"
+
+        }
+
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.4.1'
+        //mob
+        classpath "com.mob.sdk:MobSDK:2018.0319.1724"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "http://jcenter.bintray.com"
+
+        }
+
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

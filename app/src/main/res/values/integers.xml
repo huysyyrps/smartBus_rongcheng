@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="bus_default_notify_type">3</integer>
+    <integer name="bus_default_notify_station">1</integer>
+    <integer name="bus_default_notify_distance">300</integer>
+    <integer name="bus_default_notify_time">1</integer>
+    <integer name="bus_default_refresh_rate">1</integer>
+
+</resources>

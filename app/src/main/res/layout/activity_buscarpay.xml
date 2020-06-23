@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="140dip"
+                android:background="@drawable/home_picture1"
+                android:visibility="gone" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="#E8E8E8"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/homepage_title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#00BFFF" >
+
+        <ImageView
+            android:id="@+id/newdema_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/fujin_03" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:text="公交卡网上充值 "
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+
+        <RelativeLayout
+            android:id="@+id/guanyu"
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/home_picture" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="55dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/readBtnwangye"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="#66CD00"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/home_bus_iccard" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:text="公交卡充值"
+                android:textColor="#8B6508"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="（请开启NFC功能）"
+                android:textColor="#8B6508"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/readBtn"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="#A020F0"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="33dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/cc" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:text="交易信息查询"
+                android:textColor="#ffffff"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="交费成功后可在此使用带NFC功能的手机进行补登充值"
+                android:textColor="#ffffff"
+                android:textSize="12dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/balanceBtn"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="#FA8072"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/aa" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:text="余额查询"
+                android:textColor="#ffffff"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="请开启手机NFC功能"
+                android:textColor="#ffffff"
+                android:textSize="14dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

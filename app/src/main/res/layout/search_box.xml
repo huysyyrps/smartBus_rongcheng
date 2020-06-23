@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:padding="3.0dip" >
+
+        <RelativeLayout
+            android:id="@+id/search_box_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:id="@+id/search_icon"
+                android:layout_width="28.0dip"
+                android:layout_height="28.0dip"
+                android:layout_centerVertical="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/busstaion_searchbox" />
+
+            <TextView
+                android:id="@+id/search_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="4.0dip"
+                android:text="起点:"
+                android:textColor="@color/hint_text"
+                android:textSize="14dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/search_box_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+            <Button
+                android:id="@+id/search_map_btn"
+                android:layout_width="48.0dip"
+                android:layout_height="32.0dip"
+                android:layout_centerVertical="true"
+                android:background="@drawable/busstaion_nearby_station" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/search_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="28.0dip"
+            android:layout_centerVertical="true"
+            android:layout_margin="4.0dip"
+            android:layout_toLeftOf="@+id/search_box_right"
+            android:layout_toRightOf="@+id/search_box_left"
+            android:background="@null"
+            android:singleLine="true"
+            android:textColor="@color/dark_blue_text"
+            android:textColorHint="@color/hint_text"
+            android:textSize="14.0sp" />
+    </RelativeLayout>
+
+</LinearLayout>

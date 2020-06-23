@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <RelativeLayout android:id="@+id/bus_line_detail_img_layout" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:id="@+id/station_coming_bg" android:visibility="gone" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginLeft="8.0dip" android:src="@drawable/staitonlist_station_coming_solid" android:scaleType="fitCenter" android:layout_centerVertical="true" />
+            <ImageView android:id="@+id/station_line" android:layout_width="4.0dip" android:layout_height="fill_parent" android:layout_marginLeft="24.0dip" android:src="@drawable/staitonlist_stationline" android:scaleType="fitXY" />
+            <ImageView android:id="@+id/station_img" android:layout_width="wrap_content" android:layout_height="28.0dip" android:layout_marginLeft="12.5dip" android:src="@drawable/staitonlist_station" android:scaleType="fitCenter" android:layout_centerVertical="true" />
+            <ImageView android:id="@+id/station_start_img" android:visibility="gone" android:layout_width="61.0dip" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:src="@drawable/stationlist_start_bubble" android:scaleType="fitCenter" android:layout_centerVertical="true" />
+            <ImageView android:id="@+id/station_finish_img" android:visibility="gone" android:layout_width="61.0dip" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:src="@drawable/stationlist_finishi_bubble" android:scaleType="fitCenter" android:layout_centerVertical="true" />
+            <ImageView android:id="@+id/station_on_img" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="28.0dip" android:layout_marginLeft="12.5dip" android:src="@drawable/stationlist_on" android:scaleType="fitCenter" android:layout_centerVertical="true" />
+            <ImageView android:id="@+id/station_off_img" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="28.0dip" android:layout_marginLeft="12.5dip" android:src="@drawable/stationlist_off" android:scaleType="fitCenter" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/bus_line_detail_img_layout" android:layout_centerVertical="true">
+            <TextView android:textAppearance="@android:style/TextAppearance.Medium" android:textSize="18.0sp" android:textColor="@color/black_text" android:id="@+id/bus_line_detail_station_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="泉城广场" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/gray_text" android:id="@+id/bus_line_detail_station_intime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1辆车即将到站" />
+        </LinearLayout>
+        <Button android:textSize="18.0sp" android:textColor="@color/white" android:id="@+id/bicycle_nearby_btn" android:background="@drawable/btn_green" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginRight="8.0dip" android:text="自行车" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

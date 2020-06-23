@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#e9e9e9"
+    android:orientation="horizontal" >
+
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="95dp"
+        android:orientation="vertical"
+        android:layout_marginTop="1dp"
+
+        android:background="#ffffff"
+        android:padding="3dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/chongimg"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/zfb" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/zhifutype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="支付宝充值"
+                    style="@style/TextView2"/>
+
+                <TextView
+                    android:id="@+id/orderidchong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginTop="5dp"
+                    android:textSize="13dp"
+                    style="@style/TextView2" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_stock_name_code"
+                style="@style/TextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="123.00"
+                android:textColor="@color/red" />
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp">
+            <TextView
+                android:id="@+id/riqi"
+                style="@style/TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2019-09-16 11.11" />
+
+            <TextView
+
+                android:id="@+id/adapter_tuikuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+
+                android:layout_marginRight="10sp"
+                android:text="退款"
+                android:textColor="#FF3030" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

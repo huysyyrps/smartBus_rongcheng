@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/view_circlecorner_white"
+    android:orientation="vertical"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:id="@+id/id_onbus_time"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/id_onbus_station"
+            android:layout_alignBottom="@+id/id_onbus_station"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="12dip"
+            android:gravity="center_vertical"
+            android:text=""/>
+        <LinearLayout
+            android:id="@+id/id_onbus_icon_linearlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/id_onbus_time"
+            android:layout_alignTop="@id/id_onbus_station"
+            android:layout_alignBottom="@id/id_onbus_station"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/id_onbus_icon"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:background="@drawable/view_circle_green"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/id_onbus_station"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/id_onbus_icon_linearlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:text="灵宝高级技工学校"/>
+        <View
+            android:id="@+id/id_line"
+            android:layout_below="@+id/id_onbus_icon_linearlayout"
+            android:layout_alignLeft="@+id/id_onbus_icon_linearlayout"
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:background="@color/gray"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="2.5dp"></View>
+        <TextView
+            android:id="@+id/id_offbus_time"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/id_offbus_station"
+            android:layout_alignBottom="@+id/id_offbus_station"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="12dip"
+            android:gravity="center_vertical"
+            android:text=""/>
+        <LinearLayout
+            android:id="@+id/id_offbus_icon_linearlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/id_offbus_time"
+            android:layout_alignTop="@id/id_offbus_station"
+            android:layout_alignBottom="@id/id_offbus_station"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/id_offbus_icon"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:background="@drawable/view_circle_red"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/id_offbus_station"
+            android:layout_below="@+id/id_line"
+            android:layout_toRightOf="@+id/id_offbus_icon_linearlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:text="灵宝高级技工学校"/>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"></LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:padding="5dp"
+            android:textSize="13dp"
+            android:text="已参与的定制"
+            android:background="@drawable/view_circlecorner_green"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+

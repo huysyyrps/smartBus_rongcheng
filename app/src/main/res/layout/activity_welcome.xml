@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.example.smartbuslb.utils.views.CountDownProgressBar
+        android:id="@+id/counDownProgressBar"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="60dp"
+        android:layout_gravity="center_horizontal"
+        app:countDown_centerTextSize="10dp"
+        app:countDown_circleWidth="2dp"
+        app:countDown_firstColor="@color/gray"
+        app:countDown_secondColor="@color/blue"
+        app:countDown_isShowGradient="true"
+        app:countDown_centerTextColor="#2395FF"
+        android:layout_height="60dp">
+    </com.example.smartbuslb.utils.views.CountDownProgressBar>
+
+    <LinearLayout
+        android:id="@+id/llHeard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="150dp"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_logo"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            style="@style/textView_content"
+            android:text="@string/welcome_text"
+            android:textColor="@color/color_bg_selected"/>
+    </LinearLayout>
+
+
+    <TextView
+        style="@style/textView_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:text="@string/company_name"
+        android:textColor="@color/color_bg_selected"/>
+
+</RelativeLayout>

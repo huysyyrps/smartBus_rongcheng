@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/none_color"
+    android:gravity="center_vertical"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp">
+    <TextView
+        android:id="@+id/id_textview"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/none_color"
+        android:textColor="@color/textGray"
+        android:textSize="14dp"
+        android:text="已参与定制"/>
+
+</LinearLayout>

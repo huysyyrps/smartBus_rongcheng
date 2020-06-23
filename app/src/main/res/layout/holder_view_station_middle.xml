@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@drawable/view_circlecorner_white"
+
+
+    >
+    <LinearLayout
+        android:layout_marginLeft="54dp"
+        android:layout_width="1dp"
+        android:layout_height="5dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/light_grey"></LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/id_time_tv"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textGray"
+            android:textSize="14dp"
+            android:text="09:00"/>
+        <LinearLayout
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginRight="17dp">
+            <TextView
+                android:id="@+id/id_left_tv"
+                android:layout_width="4dp"
+                android:layout_height="8dp"
+                android:background="@drawable/view_circle_green_left"></TextView>
+            <TextView
+                android:id="@+id/id_right_tv"
+                android:layout_width="4dp"
+                android:layout_height="8dp"
+                android:background="@drawable/view_circle_red_right"></TextView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/id_station_tv"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/textGray"
+            android:textSize="14dp"
+            android:text="灵宝高级技工学校"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="54dp"
+        android:layout_width="1dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/light_grey"></LinearLayout>
+
+
+
+</LinearLayout>

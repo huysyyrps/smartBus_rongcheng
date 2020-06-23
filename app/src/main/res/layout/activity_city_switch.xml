@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/city_titleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:background="@drawable/titlebar_bg"
+        android:fadingEdge="none"
+        android:padding="0.0dip" >
+
+        <Button
+            android:id="@+id/city_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4.0dip"
+            android:background="@drawable/titlebar_back_button"
+            android:onClick="back"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:textSize="15.0sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="城市"
+            android:textColor="@color/white"
+            android:textSize="20.0sp" />
+    </RelativeLayout>
+
+    <main.utils.views.Header
+        android:id="@+id/header"
+        style="@style/Header"
+        app:header_title="@string/locate_current_city"></main.utils.views.Header>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16.0dip" >
+
+        <TextView
+            style="@style/iphone_text"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:gravity="bottom"
+            android:text="GPS定位"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textSize="18.0sp" />
+
+        <RelativeLayout
+            android:id="@+id/current_city_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:background="@drawable/btn_bg"
+             
+             >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="当前位置"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@color/black"
+                android:textSize="18.0sp" />
+
+            <TextView
+                android:id="@+id/current_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textSize="18.0sp" />
+        </RelativeLayout>
+
+        <TextView
+            style="@style/iphone_text"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:gravity="bottom"
+            android:text="手动选择"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textSize="18.0sp" />
+
+     <!--     <RelativeLayout
+            android:id="@+id/select_city_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:background="@drawable/btn_bg"
+            android:clickable="true"
+              >
+          </RelativeLayout>-->
+        <!--    <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="选择位置"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@color/black"
+                android:textSize="18.0sp" />
+             <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="18.0sp" android:id="@+id/selected_city" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" /> -->
+<!--  
+            <Spinner
+                android:id="@+id/city_select_id"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/btn_bg"
+                 />
+       -->
+       
+       <main.smart.bus.view.CustomerSpinner
+           android:background="@drawable/btn_bg"
+	    	android:layout_width="fill_parent" 
+	    	android:layout_height="50dp" 
+	    	android:id="@+id/city_select_id"
+	     	android:layout_marginTop="15dp"/>
+    </LinearLayout>
+
+</LinearLayout>

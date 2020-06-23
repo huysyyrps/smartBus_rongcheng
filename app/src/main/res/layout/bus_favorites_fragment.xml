@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:background="@drawable/titlebar_bg"
+        android:fadingEdge="none"
+        android:padding="0.0dip" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4.0dip"
+            android:background="@drawable/titlebar_back_button"
+            android:onClick="back"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:textSize="15.0sp"
+            android:textStyle="bold" />
+        
+         <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="4.0dip"
+            android:background="@drawable/bicycle_btn_favorite2"
+            android:id="@+id/favorite_edit_btn" 
+            android:text="@string/edit"
+            android:textColor="@color/white"
+            android:textSize="15.0sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="收藏夹"
+            android:textColor="@color/white"
+            android:textSize="20.0sp" />
+    </RelativeLayout>
+  
+   <LinearLayout 
+    android:id="@+id/bus_favorite_set_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="48dip"
+    android:visibility="gone"
+    android:orientation="horizontal" >
+        
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4.0dip"
+            android:layout_marginLeft="4.0dip"
+            android:id="@+id/bus_favorite_allsel_btn" 
+            android:text="全选" />
+    	<Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4.0dip"
+            android:id="@+id/bus_favorite_allno_btn" 
+            android:text="全不选" />
+    	
+    	<Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4.0dip"
+            android:id="@+id/bus_favorite_delete_btn"
+            android:text="@string/delete" />
+    	
+  <!--             
+  -->
+              
+    </LinearLayout>	
+ 
+
+	    <ListView
+	        android:id="@+id/bus_favorite_list"
+	        style="@style/list_style"
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent" >
+	
+	    </ListView>
+
+    
+    
+    
+     <ProgressBar android:id="@+id/favoritesProgress" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:layout_centerHorizontal="true" style="?android:attr/progressBarStyle" />
+
+</LinearLayout>

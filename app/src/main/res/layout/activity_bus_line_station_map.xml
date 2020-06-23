@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/baidumap"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:background="@drawable/titlebar_bg"
+        android:fadingEdge="none"
+        android:padding="0.0dip" >
+
+        <Button
+            android:id="@+id/bus_line_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4.0dip"
+            android:background="@drawable/titlebar_back_button"
+            android:onClick="back"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:textSize="15.0sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="地图"
+            android:textColor="@color/white"
+            android:textSize="20.0sp" />
+    </RelativeLayout>
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/bmapsView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+</LinearLayout>

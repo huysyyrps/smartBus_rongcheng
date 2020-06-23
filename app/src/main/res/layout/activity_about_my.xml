@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="main.sheet.AboutMyActivity">
+
+    <main.utils.views.Header
+        android:id="@+id/header"
+        style="@style/Header"
+        app:header_title="@string/about_my">
+    </main.utils.views.Header>
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/ic_logo1"/>
+
+    <View style="@style/HourLine"
+        android:layout_marginTop="50dp"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="软件版本:"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/tvVersion"
+            android:layout_width="0dp"
+            android:layout_weight="2.5"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    <View style="@style/HourLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="客服电话:"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tvPhone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:gravity="center_vertical"
+            android:textColor="@color/black" />
+    </LinearLayout>
+    <View style="@style/HourLine" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="公司官网:"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/tvStation"
+            android:layout_width="0dp"
+            android:layout_weight="2.5"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    <View style="@style/HourLine" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentEnd="true">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="点击阅读荣成掌上公交"
+                android:gravity="center"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="《用户协议》"
+                    android:textColor="@color/color_bg_selected"/>
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="《隐私政策》"
+                    android:textColor="@color/color_bg_selected"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

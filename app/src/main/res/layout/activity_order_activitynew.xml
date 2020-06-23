@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/tiop"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#1E90FF"
+        android:padding="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/order_black3"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp" >
+
+            <ImageView
+                android:id="@+id/newdema_location"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/fujin_03" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:text="充值记录"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/cuslist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tiop" >
+    </ListView>
+    <LinearLayout
+        android:id="@+id/zanwu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:background="@drawable/kongkong"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂无记录"/>
+    </LinearLayout>
+</LinearLayout>

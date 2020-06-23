@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/noticeItem"
+    android:layout_width="match_parent"
+    android:layout_height="95dp"
+    android:layout_marginBottom="1dp"
+    android:background="#FFFFFF"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:padding="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginLeft="2dp"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical"
+        android:paddingLeft="4dp">
+
+        <TextView
+            android:id="@+id/tvLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:paddingRight="15dp"
+            android:text="这是一个标题"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:maxLines="1"
+            android:text="这是一个标题"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:descendantFocusability="blocksDescendants"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:text="这是一条公告的测试内容"
+            android:textColor="@color/textGray"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <View style="@style/HourLine" />
+</LinearLayout>

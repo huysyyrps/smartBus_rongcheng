@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/bus_line_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="15dp"
+            android:layout_centerVertical="true"
+            android:text="195"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="17.0sp" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/bus_line_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:text="凤起路--拱北小区"
+            android:textSize="27.0sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

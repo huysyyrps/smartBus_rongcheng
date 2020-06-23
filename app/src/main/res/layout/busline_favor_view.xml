@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="0.3"
+    android:orientation="vertical" >
+	    
+  
+
+       <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="30dip"
+	        android:layout_marginLeft="20dip"
+	        android:layout_marginRight="10dip"
+	        android:gravity="center"
+	        android:orientation="horizontal" >
+	  </LinearLayout>
+	        
+ 	     <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="20dip"
+	        android:layout_marginRight="10dip"
+	        android:gravity="center"
+	        android:orientation="horizontal" >
+
+ 	         <TextView
+ 	             android:layout_width="fill_parent"
+ 	             android:layout_height="wrap_content"
+ 	             android:layout_weight="0.6"
+ 	             android:text="@string/prompt_bus_favorite"
+ 	             android:textSize="9pt" />
+
+	        <EditText
+	            android:id="@+id/bus_favorite_name"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="0.4">
+	            
+	        </EditText>
+	    
+	    </LinearLayout>
+	    
+	     <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="20dip"
+	        android:layout_marginRight="10dip"
+	        android:gravity="center"
+	        android:orientation="horizontal" >
+
+	       <TextView
+	            android:id="@+id/bus_line_name"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="0.6"
+	             android:textSize="9pt" 
+	            android:editable="false" >
+	       </TextView>
+
+	        <EditText
+	            android:id="@+id/bus_line_info"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="0.4" 
+	            android:editable="false">
+
+	        </EditText>
+	    </LinearLayout>
+	 
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="20dip"
+	        android:layout_marginRight="10dip"
+	        android:gravity="center"
+	        android:orientation="horizontal" >
+
+	        <TextView
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="0.6"
+	            android:text="起始站"
+	            android:textSize="9pt" >
+		　　         
+		　　     
+	        </TextView>
+
+	        <EditText
+	            android:id="@+id/get_on_station"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="0.4"
+	            android:editable="false">
+	        </EditText>
+	    </LinearLayout>
+
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="20dip"
+	        android:layout_marginRight="10dip"
+	        android:gravity="center"
+	        android:orientation="horizontal" >
+
+	        <TextView
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="0.6"
+	            android:text="终点站"
+	            android:textSize="9pt" >
+	        </TextView>
+
+	        <EditText
+	            android:id="@+id/get_off_station"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="0.4"
+	            android:editable="false">
+	        </EditText>
+    
+	    </LinearLayout>
+
+	    <Button
+	        android:layout_marginLeft="20sp"
+	        android:layout_marginRight="20sp"
+	        android:layout_marginTop="100sp"
+	        android:layout_gravity="center"
+			android:background="@drawable/titlebar_bg"
+	        android:id="@+id/bus_favorite_confirm_btn"
+	        android:layout_width="match_parent"
+	        android:layout_height="45dp"
+			android:textColor="@color/white"
+	        android:text="保存" />
+   
+</LinearLayout>

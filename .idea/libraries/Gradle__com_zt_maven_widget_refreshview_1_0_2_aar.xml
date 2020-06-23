@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.zt.maven.widget:refreshview:1.0.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4ac3972c9972a226cc39b5e06bc2c6d2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4ac3972c9972a226cc39b5e06bc2c6d2/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.zt.maven.widget/refreshview/1.0.2/810062e86b22566477b06cf3fa8d14685b73cf8c/refreshview-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

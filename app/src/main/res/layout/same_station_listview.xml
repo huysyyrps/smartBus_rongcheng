@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"  android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="130dp"
+
+		android:background="@drawable/cll_bus_info_bg_ad"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="130dp"
+			android:layout_marginLeft="25dp"
+			android:layout_marginTop="5dp"
+			android:orientation="vertical">
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+				<ImageView
+					android:layout_width="30dp"
+					android:layout_height="30dp"
+					android:src="@drawable/xxxxxxlllll"
+					android:layout_gravity="center_vertical"/>
+				<TextView
+					android:textAppearance="@android:style/TextAppearance.Large"
+					android:textSize="18.0sp"
+					android:id="@+id/same_station_lineCode"
+					android:gravity="center_vertical"
+					android:textColor="@color/color_bg_selectednew"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="195"
+					android:layout_marginLeft="7dp"
+					android:layout_centerVertical="true" />
+			</LinearLayout>
+			<LinearLayout
+
+				android:layout_alignParentRight="true"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="7dp"
+				android:layout_marginTop="8dp"
+				android:layout_marginRight="20dp"
+				android:singleLine="false"
+				>
+				<TextView
+					android:textSize="15sp"
+					android:textColor="@color/gray"
+					android:id="@+id/same_station_firstStation"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+
+					android:text=""/>
+				<TextView
+					android:textSize="15sp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="→"
+					android:textColor="@color/gray"
+					/>
+				<TextView
+					android:textSize="15sp"
+					android:id="@+id/same_station_endStation"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textColor="@color/gray"
+
+					android:text=""/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_marginTop="2dp"
+				android:layout_marginLeft="10sp"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				>
+				<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:src="@drawable/same_station_next_ic"/>
+				<TextView
+					android:layout_marginLeft="10sp"
+					android:textSize="13sp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textColor="#808080"
+					android:text="下一站:"/>
+				<TextView
+					android:textSize="13sp"
+					android:id="@+id/same_station_nextStation"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textColor="#808080"
+					android:text=""/>
+			</LinearLayout>
+		</LinearLayout>
+
+
+
+	</LinearLayout>
+
+
+</LinearLayout>

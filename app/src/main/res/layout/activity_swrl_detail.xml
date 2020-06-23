@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="main.other.SwrlActivity">
+
+    <main.utils.views.Header
+        android:id="@+id/header"
+        style="@style/Header"
+        app:header_title="@string/swrl">
+    </main.utils.views.Header>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/oaTextView"
+                    android:text="标题: *" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/shouye" />
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    style="@style/oaEditText" />
+            </LinearLayout>
+
+            <View style="@style/HourLine"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/oaTextView"
+                    android:text="发生时间: *" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/shouye" />
+
+                <TextView
+                    android:id="@+id/tvTime"
+                    style="@style/oaEditText" />
+            </LinearLayout>
+
+            <View style="@style/HourLine"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/oaTextView"
+                    android:text="公交路线: *" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/shouye" />
+
+                <TextView
+                    android:id="@+id/tvLine"
+                    style="@style/oaEditText"
+                    android:hint="请填写公交线路"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <View style="@style/HourLine"></View>
+
+            <WebView
+                android:id="@+id/tvContent"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:paddingRight="10dp"
+                android:layout_margin="10dp"
+                android:hint="请填写详细描述"
+                android:inputType="number|numberDecimal" />
+
+            <View style="@style/HourLine"></View>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

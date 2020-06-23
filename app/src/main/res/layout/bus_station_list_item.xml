@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/bus_station_name"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="16.0dip"
+        android:layout_toLeftOf="@+id/arrow"
+        android:singleLine="true"
+        android:gravity="center_vertical"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textSize="16.0sp" />
+</LinearLayout>

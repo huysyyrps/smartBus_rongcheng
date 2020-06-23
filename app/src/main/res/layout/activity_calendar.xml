@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffeeeeee"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/homepage_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+         android:background="@drawable/home_titlebar"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <ImageView
+            android:id="@+id/city_back"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="查询日期"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_popup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/homepage_title"
+        android:background="#ffeeeeee"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_horizontal"
+                android:text="请选择要查询的日期"
+                android:textColor="#aa564b4b"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ccc"
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"
+            android:background="#D7D7D7"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="日"
+                android:textColor="#FF6600"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="一"
+                android:textColor="#999999"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="二"
+                android:textColor="#999999"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="三"
+                android:textColor="#999999"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="四"
+                android:textColor="#999999"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="五"
+                android:textColor="#999999"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="六"
+                android:textColor="#FF6600"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ccc" >
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

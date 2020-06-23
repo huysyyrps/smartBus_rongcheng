@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/weather_blizzard"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/scBackImg"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:padding="14dp"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:text="天气详情"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent">
+        
+    
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <TextView
+            android:id="@+id/date_y"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时间"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text=""
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/cityField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="地点"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+
+        <!--
+             <TextView
+            android:id="@+id/currentTemp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:text="@string/temperature"
+            android:textColor="#CD7F32"
+            android:textColorHighlight="#FAFAD2"
+            android:textColorHint="#B8860B"
+            android:textSize="24sp" />
+        -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/currentWindPower"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="20度"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/weather_icon01"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/currentWeather"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_horizontal"
+                android:text="晴"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/currentWind"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                
+                android:gravity="center_horizontal"
+                android:text="20-30"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+            
+            
+            <TextView 
+	               android:id="@+id/pm"
+	            android:layout_width="100dp"
+	            android:layout_height="30dp"
+	            android:textSize="15dp"
+	            android:layout_gravity="center"
+	            android:background="#00EE00"
+	            android:textColor="#ffffff"
+	            android:layout_marginTop="10dp"
+	           android:layout_marginBottom="10dp"
+	            android:gravity="center"
+	            android:text="25 良"/>
+            
+        </LinearLayout>
+    </LinearLayout>
+
+    
+
+    <LinearLayout
+            android:id="@+id/re1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/text_sharp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/today"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:text=""
+                    android:textColor="@color/snow"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/weather_icon02"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="" />
+
+                <TextView
+                    android:id="@+id/weather02"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_horizontal"
+                    android:text=""
+                    android:textColor="@color/snow"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/temp02"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text=""
+                    android:textColor="@color/snow"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/wind02"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text=""
+                    android:textColor="@color/snow"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/text_sharp"
+                android:orientation="vertical" >
+<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:id="@+id/today2"
+                android:textColor="@color/snow"
+                android:textSize="16sp" />
+                <ImageView
+                    android:id="@+id/weather_icon03"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="" />
+
+                <TextView
+                    android:id="@+id/weather03"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_horizontal"
+                    android:text=""
+                    android:textColor="@color/snow"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/temp03"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/wind03"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text=""
+                    android:textColor="@color/snow"
+                    android:textSize="14sp" />
+            </LinearLayout>
+     
+            
+            
+            
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/text_sharp"
+                android:orientation="vertical" >
+<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:id="@+id/today3"
+                android:textColor="@color/snow"
+                android:textSize="16sp" />
+                <ImageView
+                    android:id="@+id/weather_icon04"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="" />
+
+                <TextView
+                    android:id="@+id/weather04"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_horizontal"
+                    android:text=""
+                    android:textColor="@color/snow"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/temp04"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/wind04"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text=""
+                    android:textColor="@color/snow"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            
+           
+            
+        </LinearLayout> 
+
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout 
+                android:layout_width="fill_parent"
+            	android:layout_height="100dp"
+            	android:layout_marginLeft="10dp"
+            	android:layout_marginRight="10dp"
+            	android:layout_marginTop="10dp"
+            	android:background="@drawable/text_sharp"
+            	android:orientation="horizontal"
+                >
+                <LinearLayout 
+                    android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:orientation="vertical"
+                    
+                    >
+                    <ImageView 
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/chuanyi"
+                        />
+                    <TextView 
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:gravity="center_horizontal"
+	                    android:text="穿衣指数"
+	                    android:layout_marginLeft="8dp"
+	                    android:textColor="@color/snow"
+	                    android:textSize="14sp"/>
+                </LinearLayout>
+ 
+                <TextView 
+                    android:id="@+id/chuanyi"
+                        android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:gravity="center_horizontal"
+	                    android:layout_marginLeft="15dp"
+	                    android:layout_gravity="center"
+	                    android:text="建议着薄外套、开衫牛仔衫裤等服装。年老体弱者应适当添加衣物，宜着夹克衫、薄毛衣等。"
+	                    android:textColor="@color/snow"
+	                    android:textSize="14sp"/>
+            </LinearLayout>
+          
+            
+            <LinearLayout 
+                android:layout_width="fill_parent"
+            	android:layout_height="100dp"
+            	android:layout_marginLeft="10dp"
+            	android:layout_marginRight="10dp"
+            	android:layout_marginTop="10dp"
+            	android:background="@drawable/text_sharp"
+            	android:orientation="horizontal"
+                >
+                <LinearLayout 
+                    android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:orientation="vertical"
+                    
+                    >
+                    <ImageView 
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                         android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/xiche"
+                        />
+                    <TextView 
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:gravity="center_horizontal"
+	                    android:layout_marginLeft="8dp"
+	                    android:text="洗车指数"
+	                    android:textColor="@color/snow"
+	                    android:textSize="14sp"/>
+                </LinearLayout>
+ 
+                <TextView 
+                    android:id="@+id/xiche"
+                        android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:gravity="center_horizontal"
+	                    android:layout_gravity="center"
+	                    android:layout_marginLeft="15dp"
+	                    android:text="较适宜洗车，未来一天无雨，风力较小，擦洗一新的汽车至少能保持一天。"
+	                    android:textColor="@color/snow"
+	                    android:textSize="14sp"/>
+            </LinearLayout>
+            
+            
+            
+            
+            <LinearLayout 
+                android:layout_width="fill_parent"
+            	android:layout_height="100dp"
+            	android:layout_marginLeft="10dp"
+            	android:layout_marginRight="10dp"
+            	android:layout_marginTop="10dp"
+            	android:layout_marginBottom="20dp"
+            	android:background="@drawable/text_sharp"
+            	android:orientation="horizontal"
+                >
+                <LinearLayout 
+                    android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:orientation="vertical"
+                    
+                    >
+                    <ImageView 
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                         android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/ganmao"
+                        />
+                    <TextView 
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:gravity="center_horizontal"
+	                    android:layout_marginLeft="8dp"
+	                    android:text="感冒指数"
+	                    android:textColor="@color/snow"
+	                    android:textSize="14sp"/>
+                </LinearLayout>
+
+                <TextView 
+                    android:id="@+id/ganmao"
+                        android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:gravity="center_horizontal"
+	                    android:layout_gravity="center"
+	                    android:layout_marginLeft="15dp"
+	                    android:text="昼夜温差较大，较易发生感冒，请适当增减衣服。体质较弱的朋友请注意防护。"
+	                    android:textColor="@color/snow"
+	                    android:textSize="14sp"/>
+            </LinearLayout>
+        </LinearLayout>
+        
+	</LinearLayout>
+</ScrollView>
+</LinearLayout>

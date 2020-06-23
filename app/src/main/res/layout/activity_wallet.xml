@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <com.scwang.wave.MultiWaveHeader
+        android:id="@+id/waveHeader"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        app:mwhVelocity="1"
+        app:mwhProgress="1"
+        app:mwhGradientAngle="45"
+        app:mwhWaveHeight="50dp"
+        app:mwhColorAlpha="0.45"
+        app:mwhStartColor="@color/colorPrimary"
+        app:mwhCloseColor="@color/colorPrimaryLight"
+        app:mwhWaves="MultiWave">
+
+        <!--android:tag="-->
+        <!--70,25,1.4,1.4,-26-->
+        <!--100,5,1.4,1.2,15-->
+        <!--420,0,1.15,1,-10-->
+        <!--520,10,1.7,1.5,20-->
+        <!--220,0,1,1,-15-->
+        <!--"-->
+        <!--app:mwhStartColor="@color/colorPrimary"-->
+        <!--app:mwhCloseColor="#31AFFE"-->
+        <!--app:mwhWaves="MultiWave"-->
+        <!--app:mwhColorAlpha="0.45"-->
+        <!--<com.scwang.wave.Wave style="@style/MultiWaveHeader.Wave"-->
+        <!--app:mwOffsetX="70dp"-->
+        <!--app:mwOffsetY="25dp"-->
+        <!--app:mwScaleX="1.4"-->
+        <!--app:mwScaleY="1.4"-->
+        <!--app:mwVelocity="-26dp"/>-->
+        <!--<com.scwang.wave.Wave style="@style/MultiWaveHeader.Wave"-->
+        <!--app:mwOffsetX="100dp"-->
+        <!--app:mwOffsetY="5dp"-->
+        <!--app:mwScaleX="1.4"-->
+        <!--app:mwScaleY="1.2"-->
+        <!--app:mwVelocity="-15dp"/>-->
+        <!--<com.scwang.wave.Wave style="@style/MultiWaveHeader.Wave"-->
+        <!--app:mwOffsetX="420dp"-->
+        <!--app:mwOffsetY="0dp"-->
+        <!--app:mwScaleX="1.15"-->
+        <!--app:mwScaleY="1"-->
+        <!--app:mwVelocity="-10dp"/>-->
+        <!--<com.scwang.wave.Wave style="@style/MultiWaveHeader.Wave"-->
+        <!--app:mwOffsetX="520dp"-->
+        <!--app:mwOffsetY="10dp"-->
+        <!--app:mwScaleX="1.7"-->
+        <!--app:mwScaleY="1.5"-->
+        <!--app:mwVelocity="20dp"/>-->
+        <!--<com.scwang.wave.Wave style="@style/MultiWaveHeader.Wave"-->
+        <!--app:mwOffsetX="220dp"-->
+        <!--app:mwOffsetY="0dp"-->
+        <!--app:mwScaleX="1"-->
+        <!--app:mwScaleY="1"-->
+        <!--app:mwVelocity="-15dp"/>-->
+    </com.scwang.wave.MultiWaveHeader>
+
+    <RelativeLayout
+        android:id="@+id/homepage_title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="-235dp"
+         >
+        <RelativeLayout
+            android:id="@+id/alljob_black"
+            android:layout_width="100dp"
+
+            android:layout_height="20dp"
+            android:layout_marginLeft="5dp" >
+
+            <ImageView
+                android:id="@+id/newdema_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_back" />
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerHorizontal="true"
+
+            android:text="我的钱包"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+
+        android:text="账户余额"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:textSize="16sp"
+
+       />
+
+    <TextView
+        android:id="@+id/moneywallet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/waveHeader"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+
+        />
+
+    <TextView
+
+        android:layout_width="16dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/waveHeader"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:text="元"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+
+        />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/readBtn"
+        android:layout_alignBottom="@+id/readBtn"
+        android:layout_marginTop="78dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/mewallet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/wallet_dan" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="充值查询" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/meAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/wallet_mon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="消费记录" />
+        </LinearLayout>
+    </LinearLayout>
+<Button
+    android:id="@+id/charge"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="70dp"
+    android:background="@drawable/wallet_button"
+    android:text="充值"
+    android:textColor="@color/white"
+    android:textSize="20sp"
+    />
+
+    <Button
+        android:id="@+id/tv_tuikuan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/wallet_button"
+        android:text="退款"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        />
+
+
+
+
+</LinearLayout>

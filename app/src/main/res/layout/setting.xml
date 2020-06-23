@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:background="@color/color_bg_selected"
+        android:fadingEdge="none"
+        android:padding="0.0dip" >
+
+
+        <ImageView
+            android:id="@+id/bus_line_back_btn"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/icon_back"
+            android:padding="15dp"
+            android:layout_width="50dp"
+            android:onClick="back"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="设置"
+            android:textColor="@color/white"
+            android:textSize="20.0sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16.0dip" >
+
+        <TextView
+            style="@style/iphone_text"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:gravity="bottom"
+            android:text="提醒方式"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textSize="18.0sp" />
+
+        <main.smart.bus.view.CustomerSpinner
+            android:id="@+id/reminderType"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn_bg" />
+
+        <TextView
+            style="@style/iphone_text"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:gravity="bottom"
+            android:text="震动开关"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textSize="18.0sp" />
+
+        <main.smart.bus.view.CustomerSpinner
+            android:id="@+id/shockType"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn_bg" />
+
+        <TextView
+            style="@style/iphone_text"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:gravity="bottom"
+            android:text="语音开关"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textSize="18.0sp" />
+
+        <main.smart.bus.view.CustomerSpinner
+            android:visibility="gone"
+            android:id="@+id/VideoType"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn_bg" />
+
+        <TextView
+            style="@style/iphone_text"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:gravity="bottom"
+            android:text="刷新频率"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textSize="18.0sp" />
+
+        <main.smart.bus.view.CustomerSpinner
+            android:id="@+id/busrefreshset"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn_bg" />
+    </LinearLayout>
+
+</LinearLayout>

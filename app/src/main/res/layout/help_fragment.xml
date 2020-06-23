@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:background="@drawable/titlebar_bg"
+        android:fadingEdge="none"
+        android:padding="0.0dip" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4.0dip"
+            android:background="@drawable/titlebar_back_button"
+            android:onClick="back"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:textSize="15.0sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="帮助"
+            android:textColor="@color/white"
+            android:textSize="20.0sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+		android:padding="16.0dip" >
+        	<RelativeLayout
+            	android:layout_width="fill_parent"
+            	android:layout_height="48.0dip"
+            	android:background="@drawable/btn_bg">
+            	<Button
+            	    android:id="@+id/help_sm_btn"
+                	android:layout_width="fill_parent"
+                	android:layout_height="fill_parent"
+                	android:text="声明"
+      				android:background="@drawable/btn_bg"
+                	android:textColor="@color/black"
+                	android:textSize="18.0sp" />
+
+            	<TextView
+                	android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:layout_alignParentRight="true"
+                	android:layout_centerVertical="true"
+                	android:textAppearance="?android:textAppearanceLarge"
+                	android:textSize="18.0sp" />
+        	</RelativeLayout>
+
+        	<RelativeLayout
+            	android:layout_width="fill_parent"
+            	android:layout_height="48.0dip"
+            	android:background="@drawable/btn_bg">
+            	<Button
+            	    android:id="@+id/help_bz_btn"
+                	android:layout_width="fill_parent"
+                	android:layout_height="fill_parent"
+                	android:text="帮助"
+      				android:background="@drawable/btn_bg"
+                	android:textColor="@color/black"
+                	android:textSize="18.0sp" />
+
+            	<TextView
+                	android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:layout_alignParentRight="true"
+                	android:layout_centerVertical="true"
+                	android:textAppearance="?android:textAppearanceLarge"
+                	android:textSize="18.0sp" />
+        	</RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

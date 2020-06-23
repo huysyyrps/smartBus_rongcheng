@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="expanded" format="boolean" />
+    <attr name="ptrRefreshableViewBackground" format="reference|color" />
+    <attr name="ptrHeaderBackground" format="reference|color" />
+    <attr name="ptrHeaderTextColor" format="reference|color" />
+    <attr name="ptrHeaderSubTextColor" format="reference|color" />
+    <attr name="ptrMode">
+        <flag name="disabled" value="0x00000000" />
+        <flag name="pullFromStart" value="0x00000001" />
+        <flag name="pullFromEnd" value="0x00000002" />
+        <flag name="both" value="0x00000003" />
+        <flag name="manualOnly" value="0x00000004" />
+        <flag name="pullDownFromTop" value="0x00000001" />
+        <flag name="pullUpFromBottom" value="0x00000002" />
+    </attr>
+    <attr name="ptrShowIndicator" format="reference|boolean" />
+    <attr name="ptrDrawable" format="reference" />
+    <attr name="ptrDrawableStart" format="reference" />
+    <attr name="ptrDrawableEnd" format="reference" />
+    <attr name="ptrOverScroll" format="reference|boolean" />
+    <attr name="ptrHeaderTextAppearance" format="reference" />
+    <attr name="ptrSubHeaderTextAppearance" format="reference" />
+    <attr name="ptrAnimationStyle">
+        <flag name="rotate" value="0x00000000" />
+        <flag name="flip" value="0x00000001" />
+    </attr>
+    <attr name="ptrScrollingWhileRefreshingEnabled" format="reference|boolean" />
+    <attr name="ptrListViewExtrasEnabled" format="reference|boolean" />
+    <attr name="ptrRotateDrawableWhilePulling" format="reference|boolean" />
+    <attr name="ptrAdapterViewBackground" format="reference|color" />
+    <attr name="ptrDrawableTop" format="reference" />
+    <attr name="ptrDrawableBottom" format="reference" />
+    <attr name="color" format="color" />
+    <attr name="multiline" format="boolean" />
+    <attr name="textSize" format="dimension" />
+    <attr name="show_level" format="integer" />
+    <attr name="default_image" format="reference" />
+    <declare-styleable name="ETurntableMenuView">
+        <attr name="children_max_scale" format="float"/>
+        <attr name="children_min_scale" format="float"/>
+    </declare-styleable>
+
+
+    <attr name="PermissionBackround" format="reference"></attr>
+    <attr name="PermissionTitleColor" format="color"></attr>
+    <attr name="PermissionMsgColor" format="color"></attr>
+    <attr name="PermissionItemTextColor" format="color"></attr>
+    <attr name="PermissionButtonTextColor" format="color"></attr>
+    <attr name="PermissionButtonBackground" format="reference"></attr>
+    <attr name="PermissionBgFilterColor" format="color"></attr>
+    <attr name="PermissionIconFilterColor" format="color"></attr>
+
+    <declare-styleable name="PullHeaderLayout">
+        <attr name="phl_header_height" format="dimension" />
+        <attr name="phl_header_expand_height" format="dimension" />
+        <attr name="phl_header_shrink_height" format="dimension" />
+        <attr name="phl_header" format="reference" />
+        <attr name="phl_content" format="reference" />
+        <attr name="phl_action" format="reference" />
+    </declare-styleable>
+</resources>

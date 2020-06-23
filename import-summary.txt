@@ -1,0 +1,118 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* ic_launcher-web.png
+* libs.zip
+* proguard-project.txt
+* proguard\
+* proguard\dump.txt
+* proguard\mapping.txt
+* proguard\seeds.txt
+* proguard\usage.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:22.2.1
+gson-2.2.4.jar => com.google.code.gson:gson:2.2.4
+
+Potentially Missing Dependency:
+-------------------------------
+When we replaced the following .jar files with a Gradle dependency, we
+inferred the dependency version number from the filename. This
+specific version may not actually be available from the repository.
+If you get a build error stating that the dependency is missing, edit
+the version number to for example "+" to pick up the latest version
+instead. (This may require you to update your code if the library APIs
+have changed.)
+
+gson-2.2.4.jar => version 2.2.4 in com.google.code.gson:gson:2.2.4
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* assets\ => app\src\main\assets
+* libs\AMap_Location_V4.0.1_20180426.jar => app\libs\AMap_Location_V4.0.1_20180426.jar
+* libs\AMap_Search_V6.1.0_20180330.jar => app\libs\AMap_Search_V6.1.0_20180330.jar
+* libs\android-async-http-1.4.4.jar => app\libs\android-async-http-1.4.4.jar
+* libs\android-viewbadger.jar => app\libs\android-viewbadger.jar
+* libs\Android_Map3D_SDK_V6.2.0_20180427.jar => app\libs\Android_Map3D_SDK_V6.2.0_20180427.jar
+* libs\arm64-v8a\libAMapSDK_MAP_v6_2_0.so => app\src\main\jniLibs\arm64-v8a\libAMapSDK_MAP_v6_2_0.so
+* libs\arm64-v8a\libBaiduMapSDK_base_v5_0_0.so => app\src\main\jniLibs\arm64-v8a\libBaiduMapSDK_base_v5_0_0.so
+* libs\arm64-v8a\libBaiduMapSDK_map_v5_0_0.so => app\src\main\jniLibs\arm64-v8a\libBaiduMapSDK_map_v5_0_0.so
+* libs\arm64-v8a\libjcore120.so => app\src\main\jniLibs\arm64-v8a\libjcore120.so
+* libs\arm64-v8a\liblocSDK7b.so => app\src\main\jniLibs\arm64-v8a\liblocSDK7b.so
+* libs\armeabi-v7a\libAMapSDK_MAP_v6_2_0.so => app\src\main\jniLibs\armeabi-v7a\libAMapSDK_MAP_v6_2_0.so
+* libs\armeabi-v7a\libBaiduMapSDK_base_v5_0_0.so => app\src\main\jniLibs\armeabi-v7a\libBaiduMapSDK_base_v5_0_0.so
+* libs\armeabi-v7a\libBaiduMapSDK_map_v5_0_0.so => app\src\main\jniLibs\armeabi-v7a\libBaiduMapSDK_map_v5_0_0.so
+* libs\armeabi-v7a\libjcore120.so => app\src\main\jniLibs\armeabi-v7a\libjcore120.so
+* libs\armeabi-v7a\liblocSDK7b.so => app\src\main\jniLibs\armeabi-v7a\liblocSDK7b.so
+* libs\armeabi\libAMapSDK_MAP_v6_2_0.so => app\src\main\jniLibs\armeabi\libAMapSDK_MAP_v6_2_0.so
+* libs\armeabi\libBaiduMapSDK_base_v5_0_0.so => app\src\main\jniLibs\armeabi\libBaiduMapSDK_base_v5_0_0.so
+* libs\armeabi\libBaiduMapSDK_map_v5_0_0.so => app\src\main\jniLibs\armeabi\libBaiduMapSDK_map_v5_0_0.so
+* libs\armeabi\libjcore120.so => app\src\main\jniLibs\armeabi\libjcore120.so
+* libs\armeabi\liblocSDK7b.so => app\src\main\jniLibs\armeabi\liblocSDK7b.so
+* libs\BaiduLBS_Android.jar => app\libs\BaiduLBS_Android.jar
+* libs\com.baidu.speechsynthesizer_1.1.1.jar => app\libs\com.baidu.speechsynthesizer_1.1.1.jar
+* libs\galaxy_lite.jar => app\libs\galaxy_lite.jar
+* libs\jcore-android-1.2.0.jar => app\libs\jcore-android-1.2.0.jar
+* libs\jpush-android-3.1.2.jar => app\libs\jpush-android-3.1.2.jar
+* libs\mips64\libjcore120.so => app\src\main\jniLibs\mips64\libjcore120.so
+* libs\mips\libjcore120.so => app\src\main\jniLibs\mips\libjcore120.so
+* libs\mpchartlib.jar => app\libs\mpchartlib.jar
+* libs\nineoldandroids-2.4.0.jar => app\libs\nineoldandroids-2.4.0.jar
+* libs\okhttp-3.4.1.jar => app\libs\okhttp-3.4.1.jar
+* libs\okhttputils-2_6_2.jar => app\libs\okhttputils-2_6_2.jar
+* libs\okio-1.10.0.jar => app\libs\okio-1.10.0.jar
+* libs\ormlite-android-4.48.jar => app\libs\ormlite-android-4.48.jar
+* libs\ormlite-core-4.48.jar => app\libs\ormlite-core-4.48.jar
+* libs\ormlite-jdbc-4.48.jar => app\libs\ormlite-jdbc-4.48.jar
+* libs\pinyin4j-2.5.0.jar => app\libs\pinyin4j-2.5.0.jar
+* libs\umeng_sdk.jar => app\libs\umeng_sdk.jar
+* libs\universal-image-loader-1.9.5.jar => app\libs\universal-image-loader-1.9.5.jar
+* libs\x86\libAMapSDK_MAP_v6_2_0.so => app\src\main\jniLibs\x86\libAMapSDK_MAP_v6_2_0.so
+* libs\x86\libBaiduMapSDK_base_v5_0_0.so => app\src\main\jniLibs\x86\libBaiduMapSDK_base_v5_0_0.so
+* libs\x86\libBaiduMapSDK_map_v5_0_0.so => app\src\main\jniLibs\x86\libBaiduMapSDK_map_v5_0_0.so
+* libs\x86\libjcore120.so => app\src\main\jniLibs\x86\libjcore120.so
+* libs\x86\liblocSDK7b.so => app\src\main\jniLibs\x86\liblocSDK7b.so
+* libs\x86_64\libAMapSDK_MAP_v6_2_0.so => app\src\main\jniLibs\x86_64\libAMapSDK_MAP_v6_2_0.so
+* libs\x86_64\libBaiduMapSDK_base_v5_0_0.so => app\src\main\jniLibs\x86_64\libBaiduMapSDK_base_v5_0_0.so
+* libs\x86_64\libBaiduMapSDK_map_v5_0_0.so => app\src\main\jniLibs\x86_64\libBaiduMapSDK_map_v5_0_0.so
+* libs\x86_64\libjcore120.so => app\src\main\jniLibs\x86_64\libjcore120.so
+* libs\x86_64\liblocSDK7b.so => app\src\main\jniLibs\x86_64\liblocSDK7b.so
+* lint.xml => app\lint.xml
+* res\ => app\src\main\res\
+* src\ => app\src\main\java\
+* src\main\smart\bus\view\德州运行图代码.txt => app\src\main\resources\main\smart\bus\view\德州运行图代码.txt
+* juxing.PNG => juxing.png
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

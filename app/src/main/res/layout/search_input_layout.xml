@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <main.utils.views.Header
+        android:id="@+id/header"
+        style="@style/Header"
+        app:header_is_left_iv_visiable="false"
+        app:header_title="站点信息">
+    </main.utils.views.Header>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="@color/color_bg_selected">
+
+        <main.smart.common.InstantAutoComplete
+            android:id="@+id/search_line"
+            style="@style/InstantAutoComplete" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ListView
+            android:id="@+id/result_list"
+            style="@style/list_style"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32.0dip"
+            android:visibility="invisible" />
+    </RelativeLayout>
+</LinearLayout>

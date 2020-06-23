@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <main.utils.views.Header
+        android:id="@+id/header"
+        style="@style/Header"
+        app:header_title="@string/bus_station_search">
+    </main.utils.views.Header>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="@color/color_bg_selected"
+        android:orientation="horizontal">
+
+        <main.smart.common.InstantAutoComplete
+            android:id="@+id/search_line"
+            style="@style/InstantAutoComplete"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/linearlayout_nocolore_radius">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/found"
+                 />
+
+            <EditText
+                android:id="@+id/etSearch"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:hint="请输入公交线路"
+                android:background="@null"
+                android:paddingLeft="50dp"
+                android:textSize="14dp" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvCleam"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/etSearch"
+            android:gravity="center"
+            android:text="取消"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:visibility="gone"
+        android:layout_marginRight="40dp"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="全部"
+            android:checked="true"
+           />
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="城市公交"
+            />
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="乡村公交"
+            />
+    </RadioGroup>
+    <View style="@style/HourLine"/>
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/recyclerView"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+   </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ListView
+            android:id="@+id/result_list"
+            style="@style/list_style"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32.0dip"
+            android:visibility="invisible" />
+    </RelativeLayout>
+</LinearLayout>
